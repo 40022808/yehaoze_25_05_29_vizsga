@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(0, 20, 1);
+    width: 100vw;
+    height: 7vh;
+    padding: 5px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_names {
+    display: flex;
+}
+
+.name {
+    color: rgb(114, 221, 120);
+    font-size: 20px;
+    margin-right: 1vw;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.kresés_input {
+    height: 28px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.kresés_btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(114, 221, 120);
+    border: solid 1px rgb(114, 221, 120);
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 1vw;
+}
+
+.container {
+    width: 100vw;
+    padding-top: 5vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.div1, .div2, .div3 {
+    display: flex;
+    flex-direction: row;
+    width: 46%;
+    gap: 30px;
+}
+
+.text {
+    flex: 1;
+
+}
+
+.text h1 {
+    margin-bottom: 20px;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.color_zold {
+    color: rgb(114, 221, 120);
+}
+
+.image1, .image2, .image3 {
+    flex: 1;
+    min-height: 200px;
+}
+
+.image1 {
+    background-image: url(assets/images/PerfectBoat1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image2 {
+    background-image: url(assets/images/PerfectBoat2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image3 {
+    background-image: url(assets/images/PerfectBoat3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .div1, .div2, .div3 {
+        flex-direction: column;
+    }
+}
