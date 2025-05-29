@@ -12,9 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('berlesek', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        $table->id();
+        $table->unsignedBigInteger('uid');
+        $table->unsignedBigInteger('yachtId');
+        $table->dateTime('startDate');
+        $table->dateTime('endDate');
+        $table->integer('dailyPrice');
+        $table->integer('deposit');
+        $table->timestamps();
+    });
     }
 
     /**
